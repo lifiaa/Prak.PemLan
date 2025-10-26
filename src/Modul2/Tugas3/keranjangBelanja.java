@@ -68,10 +68,10 @@ public class keranjangBelanja {
         double totalAkhir = hitungTotalAkhir();
 
         System.out.println("----------------------------------");
-        System.out.printf("Subtotal:               Rp %.2f\n", subtotal);
-        System.out.printf("Pajak (%.0f%%):             Rp %.2f\n", PAJAK_RATE * 100, pajak);
+        System.out.printf("Subtotal             : Rp %.2f\n", subtotal);
+        System.out.printf("Pajak (%.0f%%)       : Rp %.2f\n", PAJAK_RATE * 100, pajak);
         System.out.println("==================================");
-        System.out.printf("Total Akhir:            Rp %.2f\n", totalAkhir);
+        System.out.printf("Total Akhir          : Rp %.2f\n", totalAkhir);
         System.out.println("==================================");
     }
 }
