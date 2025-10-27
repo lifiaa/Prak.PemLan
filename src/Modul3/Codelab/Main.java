@@ -1,4 +1,4 @@
-package Modul3;
+package Modul3.Codelab;
 
 public class Main {
     public static void main(String[] args){

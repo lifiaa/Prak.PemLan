@@ -1,4 +1,4 @@
-package Modul3;
+package Modul3.Codelab;
 import java.util.Scanner;
 
 /**
