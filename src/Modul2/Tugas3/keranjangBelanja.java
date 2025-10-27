@@ -45,6 +45,16 @@ public class keranjangBelanja {
         return hitungSubtotal() + hitungPajak();
     }
 
+    public double hitungTotalSetelahDiskon() {
+        double total = hitungTotalAkhir();
+        if (total > 100000) {
+            total -= total * 0.05;
+            System.out.println("Diskon 5% diterapkan untuk total di atas Rp100.000!");
+        }
+        return total;
+    }
+
+
     // rename
     public void tampilkanRincianBelanja() {
         if (itemsDiKeranjang.isEmpty()) {
@@ -73,5 +83,9 @@ public class keranjangBelanja {
         System.out.println("==================================");
         System.out.printf("Total Akhir          : Rp %.2f\n", totalAkhir);
         System.out.println("==================================");
+        double totalDiskon = hitungTotalSetelahDiskon();
+        System.out.printf("Total Setelah Diskon:   Rp %.2f\n", totalDiskon);
+        System.out.println("==================================");
+
     }
 }

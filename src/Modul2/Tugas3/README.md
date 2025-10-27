@@ -41,6 +41,30 @@ Modul2/
 
 ---
 
+## 🌿 Git Workflow (Implementasi Git)
+
+Proyek ini menggunakan **Git branching workflow** untuk mengelola fitur baru.
+
+### Struktur Branch:
+- `main` → branch utama (stabil)
+- `feature-diskon` → menambahkan fitur diskon 5% jika total > Rp100.000
+
+### Perintah Git yang Digunakan:
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git checkout -b feature-diskon
+git add .
+git commit -m "Menambahkan fitur diskon"
+git checkout main
+git merge feature-diskon
+git push origin main
+git push origin feature-diskon
+```
+
+---
+
 ## 🧾 Contoh Output Program
 
 ```
